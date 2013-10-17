@@ -1,0 +1,6 @@
+#!/bin/bash
+#replace /Users/zhiachong with your home directory
+#replace ~/PaperG with the path to the folder where you kept your code 
+#replace zhia@dev.placelocalqa.com with your own name, like so YOURNAME@dev.placelocalqa.com
+
+rsync -rltDvzO --chmod=ugo=rwX --exclude-from "/Users/zhiachong/Command/exclude.txt" -e "ssh -i /Users/zhiachong/.ssh/id_rsa" ~/PaperG/placelocal/ zhia@dev.placelocalqa.com:~/sandbox/

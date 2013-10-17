@@ -1,0 +1,13 @@
+*.svn
+*.git
+*_svn
+*.metadata
+*.plugins
+org.eclipse
+*.cache
+*.settings
+*.fla
+.buildpath
+.project
+.git
+.idea
