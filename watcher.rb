@@ -2,7 +2,6 @@
 
 require 'rubygems'
 require 'rb-fsevent'
-require 'ruby-growl'
 
 def sync(local, host, remote, exclude, ssh)
 
