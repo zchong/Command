@@ -6,7 +6,7 @@ require 'rb-fsevent'
 def sync(local, host, remote, exclude, ssh)
 
 # Construct the bash command that runs rsync.
-cmd = "rsync -rltDvzO --chmod=ugo=rwX --exclude-from " + exclude + " -e " + ssh + " " + local + " " + host + ":" + remote
+cmd = "rsync -rltDvzO --chmod=ugo=rwX --exclude-from " + exclude + " -e " + "\"" + ssh + "\"" + " " + "\"" + local + "\"" + " " + host + ":" + remote
 # Run the command.
 system cmd
 
@@ -17,7 +17,7 @@ local = '/Users/zhiachong/PaperG/placelocal/'
 host = 'zhia@dev.placelocalqa.com'
 remote = '~/sandbox/'
 exclude = '/Users/zhiachong/Command/exclude.txt'
-ssh	= 'ssh -i /Users/zhiachong/.ssh/id_rsa'
+ssh	= 'ssh -i /Users/zhiachong/.ssh/paperg_rsa'
 
 fsevent = FSEvent.new
 fsevent.watch local do |directories|
