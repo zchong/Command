@@ -13,7 +13,7 @@ system cmd
 end
 
 
-local = '/Users/zhiachong/PaperG/placelocal/'
+local = '/Users/zhiachong/placelocal/'
 host = 'zhia@dev.placelocalqa.com'
 remote = '~/sandbox/'
 exclude = '/Users/zhiachong/Command/exclude.txt'

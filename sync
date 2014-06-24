@@ -3,4 +3,4 @@
 #replace ~/PaperG with the path to the folder where you kept your code 
 #replace zhia@dev.placelocalqa.com with your own name, like so YOURNAME@dev.placelocalqa.com
 
-rsync -rltDvzO --chmod=ugo=rwX --exclude-from "/Users/zhiachong/Command/exclude.txt" -e "ssh -i /Users/zhiachong/.ssh/paperg_rsa" ~/PaperG/placelocal/ zhia@dev.placelocalqa.com:~/sandbox/
+rsync -rltDvzO --chmod=ugo=rwX --exclude-from "/Users/zhiachong/Command/exclude.txt" -e "ssh -i /Users/zhiachong/.ssh/paperg_rsa" ~/placelocal/ zhia@dev.placelocalqa.com:~/sandbox/
